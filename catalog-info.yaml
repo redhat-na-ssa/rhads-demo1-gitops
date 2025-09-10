@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: rhads-demo1-gitops
+  description: This is GitOps manifest for rhads-demo1   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=rhads-demo1
+    backstage.io/kubernetes-id: rhads-demo1 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: rhads-demo1
+spec:
+  type: gitops
+  owner: user:default/rafaeltuelho 
+  lifecycle: experimental
+  dependsOn:
+    - component:rhads-demo1
