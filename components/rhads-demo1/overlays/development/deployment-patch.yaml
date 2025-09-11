@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay.io/redhat_na_ssa/rhads-demo1:198c60bda914aca1ec53630ae14247648ed5b0c6@sha256:0f4562aec60da7821319ada27db5424e210e3a265fb939b688282c50c422cc5e
+        - image: quay.io/redhat_na_ssa/rhads-demo1:9a49b08d51daca0bb24480d4b2ff532c63d2a615@sha256:d13dbd40d74bc353908a5e9363a061258c431c36c80401c3499085b3bd789bce
           name: container-image
